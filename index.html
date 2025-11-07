@@ -1,6 +1,75 @@
 <!DOCTYPE HTML>
 <html lang="en">
-<head>
+<head><!-- زر التفعيل مع أيقونة FullEnrich -->
+<div style="text-align: center; margin: 3rem 0;">
+  <button id="toggle-enrich" style="background: #1a1a1a; border: none; border-radius: 50px; padding: 15px 25px; cursor: pointer; display: flex; align-items: center; gap: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+    <img src="https://framerusercontent.com/images/LLFdFxEZZGNajrd0HjI1VJAYk.png" style="width: 30px; height: 30px; border-radius: 50%; background: #4f46e5; padding: 5px;" alt="FullEnrich Logo">
+    <span style="color: white; font-weight: 600; font-size: 1.1rem;">استكشف FullEnrich</span>
+  </button>
+</div>
+
+<!-- مربع المحتوى المخفي (يظهر عند الضغط) -->
+<div id="enrich-box" style="display: none; background: #0f172a; border-radius: 16px; padding: 2.5rem; margin: 2rem 0; border: 1px solid #334155; box-shadow: 0 8px 30px rgba(0,0,0,0.25);">
+  <!-- الصورة الرئيسية -->
+  <div style="text-align: center; margin-bottom: 2.5rem;">
+    <img src="https://framerusercontent.com/images/aqPMutctSYr9JObiQG6sKxVeA.png" style="width: 100%; max-width: 700px; border-radius: 12px; display: block; margin: 0 auto;" alt="15+ Vendors for the Price of 1">
+  </div>
+
+  <!-- المحتوى الرئيسي -->
+  <div style="max-width: 800px; margin: 0 auto; color: #e2e8f0;">
+    <h2 style="font-size: 2.2rem; text-align: center; margin-bottom: 1.5rem; color: #6366f1;">✨ كيف تزيد مبيعاتك 37% بـ 29€/شهر؟</h2>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+      <div style="background: rgba(99, 102, 241, 0.15); border-radius: 12px; padding: 1.5rem; text-align: center;">
+        <div style="font-size: 2.5rem; font-weight: bold; color: #6366f1;">50</div>
+        <p style="color: #94a3b8; margin-top: 0.5rem;">ليد مجانًا<br>(بدون بطاقة)</p>
+      </div>
+      <div style="background: rgba(99, 102, 241, 0.15); border-radius: 12px; padding: 1.5rem; text-align: center;">
+        <div style="font-size: 2.5rem; font-weight: bold; color: #6366f1;">85%</div>
+        <p style="color: #94a3b8; margin-top: 0.5rem;">معدل النجاح<br>في إيجاد الأرقام</p>
+      </div>
+      <div style="background: rgba(99, 102, 241, 0.15); border-radius: 12px; padding: 1.5rem; text-align: center;">
+        <div style="font-size: 2.5rem; font-weight: bold; color: #6366f1;">37%</div>
+        <p style="color: #94a3b8; margin-top: 0.5rem;">زيادة في المبيعات<br>(كما في Hook Agency)</p>
+      </div>
+    </div>
+
+    <!-- شهادة حقيقية -->
+    <blockquote style="border-left: 4px solid #4f46e5; padding-left: 1.5rem; margin: 2.5rem 0; color: #cbd5e1; font-style: italic;">
+      "مع FullEnrich، نجد <strong>3 أضعاف</strong> أرقام الهواتف لنفس القائمة من العملاء.  
+      ببساطة — FullEnrich هي <strong>قلب</strong> وكالتي التسويقية بأكملها."  
+      <br><strong>— Kevin Gohin</strong>, CEO at Hook Agency
+    </blockquote>
+
+    <!-- زر التحويل -->
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="https://fullenrich.com?via=UhroTcoxAG02" style="display: inline-block; background: linear-gradient(90deg, #4f46e5, #0ea5e9); color: white; padding: 1.2rem 2.5rem; border-radius: 10px; font-weight: 700; text-decoration: none; font-size: 1.1rem; box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4); transition: all 0.3s ease;">
+        <span style="font-weight: bold;">✅ جرب 50 ليد مجانًا</span><br>
+        <span style="font-size: 0.9rem; opacity: 0.9;">(بدون بطاقة ائتمان)</span>
+      </a>
+      <p style="color: #64748b; font-size: 0.9rem; margin-top: 1.5rem;">
+        *ملاحظة: هذا الرابط يحتوي على عمولة — لكن تقييمي صادق 100%.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- سكريبت للتحكم في المظهر -->
+<script>
+  document.getElementById('toggle-enrich').addEventListener('click', function() {
+    const box = document.getElementById('enrich-box');
+    box.style.display = box.style.display === 'none' ? 'block' : 'none';
+    
+    // تأثير انتقال ناعم
+    if (box.style.display === 'block') {
+      box.style.opacity = '0';
+      setTimeout(() => {
+        box.style.transition = 'opacity 0.4s ease';
+        box.style.opacity = '1';
+      }, 50);
+    }
+  });
+</script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <title>Spaceix — Trusted AI Tools & Hosting Deals (2025)</title>
